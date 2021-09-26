@@ -1,0 +1,45 @@
+.header {
+  min-width: 30%;
+  padding: 15px;
+  border-radius: 8px;
+  @include blurBackground();
+}
+
+.photo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+.iconsRow {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  height: 100%;
+
+  &Link {
+    display: flex;
+    align-items: center;
+    margin: 0;
+  }
+
+  &Field {
+    margin-right: 10px;
+    font-size: inherit;
+    font-style: inherit;
+    background-color: inherit;
+    border: 0;
+    cursor: pointer;
+  }
+}
