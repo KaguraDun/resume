@@ -1,3 +1,4 @@
+const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const { merge } = require('webpack-merge');
@@ -32,6 +33,24 @@ module.exports = merge(common, {
           options: {
             additionalData: `@import "@/styles/_variables.scss";\n@import "@/styles/_mixins.scss";`,
           },},
+        ],
+      },
+      {
+        test: /\.(jpe?g|png|gif|svg)$/i,
+        use: [
+          {
+            loader: ImageMinimizerPlugin.loader,
+            options: {
+              severityError: "warning", // Ignore errors on corrupted images
+              minimizerOptions: {
+                plugins: [ 
+                  ["gifsicle", { interlaced: true }],
+                  ["jpegtran", { progressive: true }],
+                  ["optipng", { optimizationLevel: 5 }],
+                ],
+              },
+            },
+          },
         ],
       },
     ],
