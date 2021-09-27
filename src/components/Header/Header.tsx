@@ -26,9 +26,9 @@ function Header() {
   return (
     <header className={s.header}>
       <Photo />
-      <h1>Kovnev Vasily</h1>
-      <h2>Junior front-end developer</h2>
-      <p>Russia, Voronezh</p>
+      <h1 className={s.title}>Vasily Kovnev </h1>
+      <h2 className={s.subTitle}>Junior front-end developer</h2>
+      <p className={s.location}>Russia, Voronezh</p>
       <address className={s.contacts}>
         <div className={s.iconsRow}>
           <Link
