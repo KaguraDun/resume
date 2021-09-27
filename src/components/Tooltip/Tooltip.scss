@@ -1,11 +1,3 @@
-.tooltip {
-  position: relative;
-
-  &:hover .text {
-    visibility: visible;
-  }
-}
-
 .text {
   position: absolute;
   bottom: 25px;
@@ -14,4 +6,12 @@
   background: $color-primary-light;
   border-radius: 8px;
   visibility: hidden;
+}
+
+.tooltip {
+  position: relative;
+
+  &:hover .text {
+    visibility: visible;
+  }
 }
