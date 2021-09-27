@@ -11,16 +11,16 @@
   @include clear-list-style;
 }
 
-.item {
-}
-
 .link {
   display: block;
+  width: 100px;
   margin-bottom: 2px;
   padding: 5px;
   font-size: 24px;
-  border-radius: 8px;
+  text-align: center;
   @include clear-link-style;
+
+  border-radius: 8px;
   @include blurBackground($opacity: 0.5);
 }
 
