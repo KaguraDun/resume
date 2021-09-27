@@ -7,7 +7,6 @@ const common = require('./webpack.common.js');
 
 module.exports = merge(common, {
   mode: 'production',
-  devtool: 'source-map',
   output: {
     path: paths.build,
     publicPath: '/',
@@ -23,12 +22,16 @@ module.exports = merge(common, {
             loader: 'css-loader',
             options: {
               importLoaders: 2,
-              sourceMap: true,
+              sourceMap: false,
               modules: true,
             },
           },
           'postcss-loader',
-          'sass-loader',
+          {  
+          loader: 'sass-loader',
+          options: {
+            additionalData: `@import "@/styles/_variables.scss";\n@import "@/styles/_mixins.scss";`,
+          },},
         ],
       },
     ],
