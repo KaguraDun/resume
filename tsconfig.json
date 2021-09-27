@@ -38,6 +38,9 @@
       "@/icons/*": [
         "src/icons/*"
       ],
+      "@/images/*": [
+        "src/images/*"
+      ],
       "@/models/*": [
         "src/models/*"
       ],

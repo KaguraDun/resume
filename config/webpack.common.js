@@ -104,6 +104,7 @@ module.exports = {
       '@components': `${paths.src}/components`,
       '@features': `${paths.src}/features`,
       '@icons': `${paths.src}/icons`,
+      '@images': `${paths.src}/images`,
       '@models': `${paths.src}/models`,
       '@pages': `${paths.src}/pages`,
       '@services': `${paths.src}/services`,
