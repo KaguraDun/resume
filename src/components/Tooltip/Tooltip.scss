@@ -1,0 +1,17 @@
+.text {
+  position: absolute;
+  bottom: 25px;
+  min-width: 50px;
+  padding: 5px;
+  background: $color-primary-light;
+  border-radius: 8px;
+  visibility: hidden;
+}
+
+.tooltip {
+  position: relative;
+
+  &:hover .text {
+    visibility: visible;
+  }
+}

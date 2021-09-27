@@ -1,0 +1,46 @@
+.project {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.thumbnailImg {
+  width: 250px;
+  height: auto;
+}
+
+.name {
+  margin: 0 0 10px;
+  font-size: 30px;
+  line-height: 1;
+}
+
+.linksWrapper {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.link {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 5px;
+  font-size: 20px;
+  background: $color-primary-medium;
+  border-radius: 8px;
+  @include clear-link-style;
+  @include blurBackground;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 60%;
+}
+
+.about {
+  padding: 0 5px;
+}

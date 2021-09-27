@@ -1,0 +1,28 @@
+@mixin blurBackground($opacity: 0.8) {
+  background: rgba($color-primary-lighter, $opacity);
+  backdrop-filter: blur(5px);
+}
+
+@mixin page {
+  width: 100%;
+  height: 80vh;
+  padding: 10px;
+  border-radius: 8px;
+  @include blurBackground;
+}
+
+@mixin clear-link-style {
+  &,
+  &:hover,
+  &:focus,
+  &:active {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+@mixin clear-list-style {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}

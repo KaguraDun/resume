@@ -1,0 +1,33 @@
+.navigation {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.itemList {
+  display: flex;
+  gap: 5px;
+  align-items: flex-start;
+  @include clear-list-style;
+}
+
+.link {
+  display: block;
+  width: 100px;
+  margin-bottom: 2px;
+  padding: 5px;
+  font-size: 24px;
+  text-align: center;
+  @include clear-link-style;
+
+  border-radius: 8px;
+  @include blurBackground($opacity: 0.5);
+}
+
+.selected {
+  height: 32px;
+  margin-bottom: 0;
+  @include blurBackground($opacity: 0.8);
+
+  border-radius: 8px 8px 0 0;
+}
