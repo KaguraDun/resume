@@ -1,3 +1,7 @@
-.projects{
+.projects {
   @include page;
+}
+
+.itemList {
+  @include clear-list-style;
 }
