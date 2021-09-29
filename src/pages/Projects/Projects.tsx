@@ -8,13 +8,13 @@ import s from './Projects.scss';
 function Projects() {
   return (
     <div className={s.projects}>
-      {projects.map((item) => (
-        <ul className={s.itemList}>
-          <li className={s.item}>
+      <ul className={s.itemList}>
+        {projects.map((item) => (
+          <li key={item.name} className={s.item}>
             <Project item={item} />
           </li>
-        </ul>
-      ))}
+        ))}
+      </ul>
     </div>
   );
 }
