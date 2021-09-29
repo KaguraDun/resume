@@ -1,6 +1,6 @@
 .header {
-  min-width: 30%;
-  padding: 15px;
+  min-width: 25%;
+  padding: 10px;
   border-radius: 8px;
   @include blurBackground();
 }
@@ -17,6 +17,15 @@
 .location {
   margin: 0 5px 0;
 }
+
+.title {
+  font-size: 25px;
+}
+
+.subTitle {
+  font-size: 20px;
+}
+
 .contacts {
   display: flex;
   flex-direction: column;
