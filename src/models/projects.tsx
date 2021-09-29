@@ -65,6 +65,20 @@ const projects: ProjectInterface[] = [
       </>
     ),
   },
+  {
+    thumbnail: require('../images/projects/gem-puzzle/1.png'),
+    name: 'Gem puzzle',
+    deploy:
+      'https://rolling-scopes-school.github.io/kaguradun-JS2020Q3/gem-puzzle/',
+    git: 'https://github.com/KaguraDun/rolling-scopes-school/tree/gem-puzzle/gem-puzzle/webpack-boilerplate-master',
+    about: (
+      <>
+        Gem puzzle with different field sizes and best results table.
+        <br />
+        App created during RSSchool JavaScript/Front-end course
+      </>
+    ),
+  },
   },
 ];
 
