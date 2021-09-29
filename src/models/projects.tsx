@@ -51,6 +51,20 @@ const projects: ProjectInterface[] = [
       </>
     ),
   },
+  {
+    thumbnail: require('../images/projects/css-dinner/1.png'),
+    name: 'CSS Dinner',
+    deploy:
+      'https://rolling-scopes-school.github.io/kaguradun-JS2020Q3/rs-css/',
+    git: 'https://github.com/KaguraDun/rolling-scopes-school/tree/rs-css/rs-css/webpack-boilerplate-master',
+    about: (
+      <>
+        Interactive css trainer.
+        <br />
+        App created during RSSchool JavaScript/Front-end course
+      </>
+    ),
+  },
   },
 ];
 
