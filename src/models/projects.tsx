@@ -36,6 +36,21 @@ const projects: ProjectInterface[] = [
       </>
     ),
   },
+  {
+    thumbnail: require('../images/projects/covid-19-dashboard/1.png'),
+    name: 'Covid 19 dashboard',
+    deploy:
+      'https://rolling-scopes-school.github.io/zavrazhneva-JS2020Q3/covid-19/',
+    git: 'https://github.com/Zavrazhneva/covid-19',
+    about: (
+      <>
+        Interactive map with various covid statistics and its visualization.
+        <br />
+        App created during RSSchool JavaScript/Front-end course in team of 4
+        members
+      </>
+    ),
+  },
   },
 ];
 
