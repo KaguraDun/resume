@@ -1,3 +1,4 @@
+/* eslint-disable react/no-danger */
 import React from 'react';
 
 import ExternalLinkIcon from '@/icons/external-link.svg';
@@ -12,7 +13,7 @@ interface Props {
 
 function Project({ item }: Props) {
   return (
-    <div className={s.project}>
+    <article className={s.project}>
       <div className={s.thumbnail}>
         <img alt={item.name} className={s.thumbnailImg} src={item.thumbnail} />
       </div>
@@ -39,9 +40,9 @@ function Project({ item }: Props) {
           </a>
         </div>
 
-        <p className={s.about}>{item.about}</p>
+        <div className={s.about}>{item.about}</div>
       </div>
-    </div>
+    </article>
   );
 }
 
