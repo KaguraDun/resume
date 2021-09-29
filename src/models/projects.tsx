@@ -79,6 +79,19 @@ const projects: ProjectInterface[] = [
       </>
     ),
   },
+  {
+    thumbnail: require('../images/projects/virtual-keyboard/1.png'),
+    name: 'Virtual keyboard',
+    deploy:
+      'https://rolling-scopes-school.github.io/kaguradun-JS2020Q3/virtual-keyboard/',
+    git: 'https://github.com/KaguraDun/rolling-scopes-school/tree/virtual-keyboard/virtual-keyboard',
+    about: (
+      <>
+        Virtual keyboard with speech recognition and awesome voice acting.
+        <br />
+        App created during RSSchool JavaScript/Front-end course
+      </>
+    ),
   },
 ];
 
