@@ -11,9 +11,12 @@
   @include clear-list-style;
 }
 
+.item {
+  width: 50%;
+}
+
 .link {
   display: block;
-  width: 100px;
   margin-bottom: 2px;
   padding: 5px;
   font-size: 24px;
