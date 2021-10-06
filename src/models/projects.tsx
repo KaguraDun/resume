@@ -26,10 +26,6 @@ const projects: ProjectInterface[] = [
             You can upload any midi file, our app convert it to five line staff
             and then you watch notes and listen music.
           </li>
-          <li>
-            You can upload any midi file, our app convert it to five line staff
-            and then you watch notes and listen music.
-          </li>
           <li>You can change instruments and print staff.</li>
           <li>Also it has a library of already uploaded compositions.</li>
         </ul>

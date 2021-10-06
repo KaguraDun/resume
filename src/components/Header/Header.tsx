@@ -26,7 +26,7 @@ function Header() {
   return (
     <header className={s.header}>
       <Photo />
-      <h1 className={s.title}>Vasily Kovnev </h1>
+      <h1 className={s.title}>Vasily Kovnev</h1>
       <h2 className={s.subTitle}>Junior front-end developer</h2>
       <p className={s.location}>Russia, Voronezh</p>
       <address className={s.contacts}>
@@ -49,7 +49,6 @@ function Header() {
         </div>
 
         <label className={s.contact}>
-          Email:
           <Tooltip text="Copy email to clipboard">
             <input
               className={s.contactField}
@@ -68,7 +67,6 @@ function Header() {
           </Link>
         </label>
         <label className={s.contact}>
-          Phone:
           <Tooltip text="Copy phone to clipboard">
             <input
               className={s.contactField}

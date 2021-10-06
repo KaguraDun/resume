@@ -18,7 +18,7 @@ function About() {
         Faculty of Physics and Mathematics - Applied Informatics
         <br />
         <br />
-        2017 - 2019 - Master&apos;s Degree Degree Voronezh State University
+        2017 - 2019 - Master&apos;s Degree Voronezh State University
         <br />
         Faculty of Applied Mathematics and Mechanics - Mathematical foundations
         of computer graphics
