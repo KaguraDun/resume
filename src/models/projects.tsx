@@ -115,6 +115,21 @@ const projects: ProjectInterface[] = [
       </>
     ),
   },
+  {
+    thumbnail: require('../images/projects/calculator/1.png'),
+    stackIcons: [stack.js],
+    name: 'Calculator',
+    deploy:
+      'https://rolling-scopes-school.github.io/kaguradun-JS2020Q3/calculator/',
+    git: 'https://github.com/KaguraDun/rolling-scopes-school/tree/calculator',
+    about: (
+      <>
+        Calculator with basic functions.
+        <br />
+        App created during RSSchool JavaScript/Front-end course
+      </>
+    ),
+  },
 ];
 
 export { projects };
