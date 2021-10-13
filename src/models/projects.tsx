@@ -5,7 +5,7 @@ import { stack, StackIcon } from '@/models/stack';
 
 interface ProjectInterface {
   thumbnail: string;
-  stackIcons: StackIcon[];
+  stackIcons?: StackIcon[];
   name: string;
   deploy: string;
   git: string;
@@ -15,7 +15,7 @@ interface ProjectInterface {
 const projects: ProjectInterface[] = [
   {
     thumbnail: require('../images/projects/songster-clone/1.png'),
-    stackIcons: [stack.sass, stack.js],
+    stackIcons: [stack.js, stack.sass],
     name: 'Songster clone',
     deploy: 'https://kaguradun.github.io/songster-clone/',
     git: 'https://github.com/KaguraDun/songster-clone',
@@ -38,7 +38,7 @@ const projects: ProjectInterface[] = [
   },
   {
     thumbnail: require('../images/projects/covid-19-dashboard/1.png'),
-    stackIcons: [stack.sass, stack.js],
+    stackIcons: [stack.js, stack.sass],
     name: 'Covid 19 dashboard',
     deploy:
       'https://rolling-scopes-school.github.io/zavrazhneva-JS2020Q3/covid-19/',
@@ -54,14 +54,18 @@ const projects: ProjectInterface[] = [
   },
   {
     thumbnail: require('../images/projects/css-dinner/1.png'),
-    stackIcons: [stack.sass, stack.js],
+    stackIcons: [stack.js, stack.sass],
     name: 'CSS Dinner',
     deploy:
       'https://rolling-scopes-school.github.io/kaguradun-JS2020Q3/rs-css/',
     git: 'https://github.com/KaguraDun/rolling-scopes-school/tree/rs-css/rs-css/webpack-boilerplate-master',
     about: (
       <>
-        Interactive css trainer.
+        Interactive css trainer. The simulator consists of several game levels.
+        Each level includes an example of the layout and html code corresponding
+        to the current level. Some elements of the layout are highlighted with
+        animation. It is up to the user to write a CSS selector that matches all
+        of the selected layout elements.
         <br />
         App created during RSSchool JavaScript/Front-end course
       </>
@@ -69,7 +73,7 @@ const projects: ProjectInterface[] = [
   },
   {
     thumbnail: require('../images/projects/gem-puzzle/1.png'),
-    stackIcons: [stack.sass, stack.js],
+    stackIcons: [stack.js, stack.sass],
     name: 'Gem puzzle',
     deploy:
       'https://rolling-scopes-school.github.io/kaguradun-JS2020Q3/gem-puzzle/',
