@@ -1,8 +1,11 @@
 /* eslint-disable global-require */
 import React from 'react';
 
+import { stack, StackIcon } from '@/models/stack';
+
 interface ProjectInterface {
   thumbnail: string;
+  stackIcons: StackIcon[];
   name: string;
   deploy: string;
   git: string;
@@ -12,6 +15,7 @@ interface ProjectInterface {
 const projects: ProjectInterface[] = [
   {
     thumbnail: require('../images/projects/songster-clone/1.png'),
+    stackIcons: [stack.sass, stack.js],
     name: 'Songster clone',
     deploy: 'https://kaguradun.github.io/songster-clone/',
     git: 'https://github.com/KaguraDun/songster-clone',
@@ -34,6 +38,7 @@ const projects: ProjectInterface[] = [
   },
   {
     thumbnail: require('../images/projects/covid-19-dashboard/1.png'),
+    stackIcons: [stack.sass, stack.js],
     name: 'Covid 19 dashboard',
     deploy:
       'https://rolling-scopes-school.github.io/zavrazhneva-JS2020Q3/covid-19/',
@@ -49,6 +54,7 @@ const projects: ProjectInterface[] = [
   },
   {
     thumbnail: require('../images/projects/css-dinner/1.png'),
+    stackIcons: [stack.sass, stack.js],
     name: 'CSS Dinner',
     deploy:
       'https://rolling-scopes-school.github.io/kaguradun-JS2020Q3/rs-css/',
@@ -63,6 +69,7 @@ const projects: ProjectInterface[] = [
   },
   {
     thumbnail: require('../images/projects/gem-puzzle/1.png'),
+    stackIcons: [stack.sass, stack.js],
     name: 'Gem puzzle',
     deploy:
       'https://rolling-scopes-school.github.io/kaguradun-JS2020Q3/gem-puzzle/',
@@ -77,6 +84,7 @@ const projects: ProjectInterface[] = [
   },
   {
     thumbnail: require('../images/projects/virtual-keyboard/1.png'),
+    stackIcons: [stack.js],
     name: 'Virtual keyboard',
     deploy:
       'https://rolling-scopes-school.github.io/kaguradun-JS2020Q3/virtual-keyboard/',
