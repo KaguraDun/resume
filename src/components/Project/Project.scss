@@ -2,10 +2,11 @@
   display: grid;
   grid-template:
     'thumbnail info'
-    'stack info';
-  grid-template-rows: 0.2fr 1fr;
+    'stack info'
+    '. info';
+  grid-template-rows: 0.2fr 0.2fr fit-content;
   grid-template-columns: 0.5fr 1fr;
-  gap: 10px;
+  gap: 5px 15px;
   justify-content: space-between;
 }
 
