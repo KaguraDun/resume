@@ -1,6 +1,7 @@
 /* eslint-disable react/no-danger */
 import React from 'react';
 
+import StackIcons from '@/components/StackIcons/StackIcons';
 import ExternalLinkIcon from '@/icons/external-link.svg';
 import GithubLogo from '@/icons/socials/github.svg';
 import { ProjectInterface } from '@/models/projects';
@@ -17,6 +18,7 @@ function Project({ item }: Props) {
       <div className={s.thumbnail}>
         <img alt={item.name} className={s.thumbnailImg} src={item.thumbnail} />
       </div>
+      <StackIcons className={s.stackIcons} iconsList={item.stackIcons} />
       <div className={s.info}>
         <h3 className={s.name}>{item.name}</h3>
         <div className={s.linksWrapper}>
