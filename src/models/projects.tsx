@@ -98,6 +98,21 @@ const projects: ProjectInterface[] = [
     ),
   },
   {
+    thumbnail: require('../images/projects/shelter/1.png'),
+    stackIcons: [],
+    name: 'Shelter',
+    deploy:
+      'https://rolling-scopes-school.github.io/kaguradun-JS2020Q3/shelter/pages/main/main.html',
+    git: 'https://github.com/KaguraDun/rolling-scopes-school/tree/shelter',
+    about: (
+      <>
+        Simple two page website
+        <br />
+        App created during RSSchool JavaScript/Front-end course
+      </>
+    ),
+  },
+  {
     thumbnail: require('../images/projects/momentum/1.png'),
     stackIcons: [stack.js],
     name: 'Momentum',
