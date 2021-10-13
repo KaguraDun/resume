@@ -36,7 +36,7 @@ module.exports = merge(common, {
         ],
       },
       {
-        test: /\.(jpe?g|png|gif|svg)$/i,
+        test: /\.(jpe?g|png|gif)$/i,
         use: [
           {
             loader: ImageMinimizerPlugin.loader,
@@ -44,9 +44,9 @@ module.exports = merge(common, {
               severityError: "warning", // Ignore errors on corrupted images
               minimizerOptions: {
                 plugins: [ 
-                  ["gifsicle", { interlaced: true }],
-                  ["jpegtran", { progressive: true }],
-                  ["optipng", { optimizationLevel: 5 }],
+                  ["imagemin-webp", {
+                    quality:  90,
+                  }]
                 ],
               },
             },
