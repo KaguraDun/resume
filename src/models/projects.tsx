@@ -97,6 +97,24 @@ const projects: ProjectInterface[] = [
       </>
     ),
   },
+  {
+    thumbnail: require('../images/projects/momentum/1.png'),
+    stackIcons: [stack.js],
+    name: 'Momentum',
+    deploy:
+      'https://rolling-scopes-school.github.io/kaguradun-JS2020Q3/momentum/',
+    git: 'https://github.com/KaguraDun/rolling-scopes-school/tree/momentum',
+    about: (
+      <>
+        Momentum is an analogue of the app of the same name in the Chrome web
+        store. The application shows the time and username, his goal for the
+        current day. The background image changes depending on the time of day.
+        It also features quotes from famous people and the weather forecast.
+        <br />
+        App created during RSSchool JavaScript/Front-end course
+      </>
+    ),
+  },
 ];
 
 export { projects };
