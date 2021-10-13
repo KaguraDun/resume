@@ -5,5 +5,8 @@
 }
 
 .itemList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   @include clear-list-style;
 }

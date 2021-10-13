@@ -1,7 +1,21 @@
 .project {
-  display: flex;
-  gap: 10px;
+  display: grid;
+  grid-template:
+    'thumbnail info'
+    'stack info'
+    '. info';
+  grid-template-rows: 0.2fr 0.2fr fit-content;
+  grid-template-columns: 0.5fr 1fr;
+  gap: 5px 15px;
   justify-content: space-between;
+}
+
+.thumbnail {
+  grid-area: thumbnail;
+}
+
+.stackIcons {
+  grid-area: stack;
 }
 
 .thumbnailImg {
@@ -38,8 +52,8 @@
 .info {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  width: 60%;
+  grid-area: info;
+  width: 100%;
   margin-bottom: 20px;
 }
 
