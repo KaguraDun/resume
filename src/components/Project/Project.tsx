@@ -1,4 +1,3 @@
-/* eslint-disable react/no-danger */
 import React from 'react';
 
 import StackIcons from '@/components/StackIcons/StackIcons';
@@ -18,7 +17,10 @@ function Project({ item }: Props) {
       <div className={s.thumbnail}>
         <img alt={item.name} className={s.thumbnailImg} src={item.thumbnail} />
       </div>
-      <StackIcons className={s.stackIcons} iconsList={item.stackIcons} />
+      <div className={s.stackIcons}>
+        <StackIcons iconsList={item.stackIcons} />
+      </div>
+
       <div className={s.info}>
         <h3 className={s.name}>{item.name}</h3>
         <div className={s.linksWrapper}>
