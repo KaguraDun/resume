@@ -14,7 +14,7 @@ interface ProjectInterface {
 
 const projects: ProjectInterface[] = [
   {
-    thumbnail: require('../images/projects/songster-clone/1.png'),
+    thumbnail: require('../../public/images/projects/songster-clone/1.png'),
     stackIcons: [stack.js, stack.sass],
     name: 'Songster clone',
     deploy: 'https://kaguradun.github.io/songster-clone/',
@@ -37,7 +37,8 @@ const projects: ProjectInterface[] = [
     ),
   },
   {
-    thumbnail: require('../images/projects/covid-19-dashboard/1.png'),
+    thumbnail: require('../../public/images/projects/songster-clone/1.png'),
+    thumbnail: require('../../public/images/projects/covid-19-dashboard/1.png'),
     stackIcons: [stack.js, stack.sass],
     name: 'Covid 19 dashboard',
     deploy:
@@ -53,7 +54,7 @@ const projects: ProjectInterface[] = [
     ),
   },
   {
-    thumbnail: require('../images/projects/css-dinner/1.png'),
+    thumbnail: require('../../public/images/projects/css-dinner/1.png'),
     stackIcons: [stack.js, stack.sass],
     name: 'CSS Dinner',
     deploy:
@@ -72,7 +73,7 @@ const projects: ProjectInterface[] = [
     ),
   },
   {
-    thumbnail: require('../images/projects/gem-puzzle/1.png'),
+    thumbnail: require('../../public/images/projects/gem-puzzle/1.png'),
     stackIcons: [stack.js, stack.sass],
     name: 'Gem puzzle',
     deploy:
@@ -87,7 +88,7 @@ const projects: ProjectInterface[] = [
     ),
   },
   {
-    thumbnail: require('../images/projects/virtual-keyboard/1.png'),
+    thumbnail: require('../../public/images/projects/virtual-keyboard/1.png'),
     stackIcons: [stack.js],
     name: 'Virtual keyboard',
     deploy:
@@ -102,7 +103,7 @@ const projects: ProjectInterface[] = [
     ),
   },
   {
-    thumbnail: require('../images/projects/shelter/1.png'),
+    thumbnail: require('../../public/images/projects/shelter/1.png'),
     stackIcons: [],
     name: 'Shelter',
     deploy:
@@ -117,7 +118,7 @@ const projects: ProjectInterface[] = [
     ),
   },
   {
-    thumbnail: require('../images/projects/momentum/1.png'),
+    thumbnail: require('../../public/images/projects/momentum/1.png'),
     stackIcons: [stack.js],
     name: 'Momentum',
     deploy:
@@ -135,7 +136,7 @@ const projects: ProjectInterface[] = [
     ),
   },
   {
-    thumbnail: require('../images/projects/calculator/1.png'),
+    thumbnail: require('../../public/images/projects/calculator/1.png'),
     stackIcons: [stack.js],
     name: 'Calculator',
     deploy:
