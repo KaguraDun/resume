@@ -2,12 +2,17 @@ import React from 'react';
 
 import CssIcon from '@/icons/stack/css3.svg';
 import JSIcon from '@/icons/stack/javascript.svg';
+import PugIcon from '@/icons/stack/pug.svg';
 import ReactIcon from '@/icons/stack/react-wordmark.svg';
 import ReduxIcon from '@/icons/stack/redux.svg';
 import SassIcon from '@/icons/stack/sass.svg';
 import TSIcon from '@/icons/stack/typescript.svg';
 
 const stack = {
+  pug: {
+    icon: <PugIcon />,
+    name: 'Pug',
+  },
   js: {
     icon: <JSIcon />,
     name: 'JavaScript',
