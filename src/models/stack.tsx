@@ -1,5 +1,6 @@
 import React from 'react';
 
+import CssIcon from '@/icons/stack/css3.svg';
 import JSIcon from '@/icons/stack/javascript.svg';
 import ReactIcon from '@/icons/stack/react-wordmark.svg';
 import ReduxIcon from '@/icons/stack/redux.svg';
@@ -22,6 +23,10 @@ const stack = {
   redux: {
     icon: <ReduxIcon />,
     name: 'Redux',
+  },
+  css: {
+    icon: <CssIcon />,
+    name: 'Css',
   },
   sass: {
     icon: <SassIcon />,
