@@ -3,7 +3,9 @@ import React from 'react';
 import s from './Footer.scss';
 
 function Footer() {
-  return <footer className={s.footer}> Vasily Kovnev - 2021</footer>;
+  const currentYear = new Date().getFullYear();
+
+  return <footer className={s.footer}>Vasily Kovnev - {currentYear}</footer>;
 }
 
 export default Footer;
