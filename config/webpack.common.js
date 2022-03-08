@@ -102,6 +102,7 @@ module.exports = {
     alias: {
       '@/components': `${paths.src}/components`,
       '@/features': `${paths.src}/features`,
+      '@/fonts': `${paths.public}/fonts`,
       '@/icons': `${paths.public}/icons`,
       '@/images': `${paths.public}/images`,
       '@/models': `${paths.src}/models`,
