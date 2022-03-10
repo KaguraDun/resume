@@ -1,0 +1,44 @@
+.location {
+  font-style: normal;
+}
+
+.iconsRow {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  height: 100%;
+
+  &Link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin: 0 15px 0 0;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &Field {
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+    font-style: normal;
+    background-color: inherit;
+    border: 0;
+    cursor: pointer;
+
+    &:focus,
+    &:hover {
+      border-bottom: 1px solid $color-primary-dark;
+      outline: none;
+    }
+  }
+}
