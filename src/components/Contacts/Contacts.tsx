@@ -1,20 +1,14 @@
 import React from 'react';
 
-import FrameLogo from '@/icons/socials/frame.svg';
+import avatar from '@/images/avatar.jpg';
 
 import Socials from '../Socials/Socials';
 import s from './Contacts.scss';
 
-const Photo = () => (
-  <div className={s.photo}>
-    <FrameLogo height="60%" width="60%" />
-  </div>
-);
-
 function Contacts() {
   return (
     <article className={s.contacts}>
-      <Photo />
+      <img alt="avatar" className={s.photo} src={avatar} />
 
       <h1 className={s.title}>
         Vasily Kovnev
