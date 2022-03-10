@@ -14,6 +14,41 @@ interface ProjectInterface {
 
 const projects: ProjectInterface[] = [
   {
+    thumbnail: require('../../public/images/projects/pointing-poker/1.png'),
+    stackIcons: [
+      stack.ts,
+      stack.react,
+      stack.sass,
+      stack.redux,
+      stack.socketio,
+    ],
+    name: 'Pointing poker',
+    deploy: 'https://scrum-planning-poker.netlify.app/',
+    git: 'https://github.com/KaguraDun/pointing-poker/tree/develop',
+    about: (
+      <>
+        <p>
+          Scrum poker application for labor estimation. It&apos;s supports
+          multiple games at the same time, multiple decks and game chat.
+        </p>
+        <p>
+          App created as final task of RSSchool React course in team of 2
+          members.
+        </p>
+        <p>I worked at:</p>
+        <ul>
+          <li>Express server;</li>
+          <li>
+            Communication between client and express server with socket.io;
+          </li>
+          <li>User interface;</li>
+          <li>Chat;</li>
+          <li>Game mechanics;</li>
+        </ul>
+      </>
+    ),
+  },
+  {
     thumbnail: require('../../public/images/projects/songster-clone/1.png'),
     stackIcons: [stack.js, stack.sass],
     name: 'Songster clone',
