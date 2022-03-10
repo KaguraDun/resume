@@ -4,32 +4,34 @@ import s from './About.scss';
 
 function About() {
   return (
-    <div className={s.about}>
-      Hello my name is Vasily Kovnev. I am Junior front-end developer. For the
-      last year I have been actively studying front-end technologies: HTML, CSS,
-      JavaScript, React, Redux, TypeScript and testing.
-      <h3>Languages</h3>
-      English - B1, Russian - Native.
-      <h3>Education</h3>
-      <p>
+    <section className={s.about}>
+      <p className={s.text}>
+        Hello my name is Vasily Kovnev. I am front-end developer. My stack:
+        HTML5, BEM, PUG, CSS3, SASS, JavaScript, React, Redux, TypeScript, Git,
+        and unit testing.
+      </p>
+      <h2 className={s.heading}>Languages</h2>
+      <p className={s.text}>English - B1, Russian - Native.</p>
+      <h2 className={s.heading}>Education</h2>
+      <p className={s.text}>
         2013 - 2017 - Bachelor&apos;s Degree Voronezh State Pedagogical
         University
         <br />
         Faculty of Physics and Mathematics - Applied Informatics
-        <br />
-        <br />
+      </p>
+      <p className={s.text}>
         2017 - 2019 - Master&apos;s Degree Voronezh State University
         <br />
         Faculty of Applied Mathematics and Mechanics - Mathematical foundations
         of computer graphics
-        <br />
-        <br />
-        2019 - Now - PhD Voronezh Institute of High Technologies
+      </p>
+      <p className={s.text}>
+        2019 - 2022 - PhD Voronezh Institute of High Technologies
         <br />
         Informatics and computer engineering - Management in social and economic
-        systems
+        systems (not completed)
       </p>
-    </div>
+    </section>
   );
 }
 
