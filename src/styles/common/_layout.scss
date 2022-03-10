@@ -1,0 +1,11 @@
+@mixin blurBackground($opacity: 0.9) {
+  background: rgba($color-primary-lighter, $opacity);
+  backdrop-filter: blur(5px);
+}
+
+@mixin page {
+  padding: 15px;
+  border-radius: 0 0 4px 4px;
+
+  @include blurBackground;
+}
