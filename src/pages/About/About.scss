@@ -1,5 +1,13 @@
 .about {
   @include page;
+}
 
-  border-radius: 0 8px 8px 8px;
+.heading {
+  margin: 0 0 15px;
+
+  @include text-heading-h2;
+}
+
+.text {
+  margin: 0 0 10px;
 }
