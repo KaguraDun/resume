@@ -17,6 +17,7 @@ function Project({ item }: Props) {
       <div className={s.thumbnail}>
         <img alt={item.name} className={s.thumbnailImg} src={item.thumbnail} />
       </div>
+
       <div className={s.stackIcons}>
         <StackIcons iconsList={item.stackIcons} />
       </div>
@@ -31,7 +32,7 @@ function Project({ item }: Props) {
             target="_blank"
           >
             Try online
-            <ExternalLinkIcon height="30px" width="30px" />
+            <ExternalLinkIcon height="15px" width="15px" />
           </a>
           <a
             className={s.link}
@@ -40,7 +41,7 @@ function Project({ item }: Props) {
             target="_blank"
           >
             Source code
-            <GithubLogo height="30px" width="30px" />
+            <GithubLogo height="20px" width="20px" />
           </a>
         </div>
 
