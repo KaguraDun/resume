@@ -1,6 +1,7 @@
 .iconList {
   display: flex;
   gap: 10px;
+
   @include clear-list-style;
 }
 
