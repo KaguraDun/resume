@@ -31,7 +31,7 @@ module.exports = merge(common, {
           {  
           loader: 'sass-loader',
           options: {
-            additionalData: `@import "@/styles/_variables.scss";\n@import "@/styles/_mixins.scss";`,
+            additionalData: `@import "@/styles/_variables.scss";\n@import "@/styles/common/_mixins.scss";`,
           },},
         ],
       },
