@@ -2,6 +2,7 @@ import React from 'react';
 
 import CssIcon from '@/icons/stack/css3.svg';
 import JSIcon from '@/icons/stack/javascript.svg';
+import Jest from '@/icons/stack/jest.svg';
 import PugIcon from '@/icons/stack/pug.svg';
 import ReactIcon from '@/icons/stack/react-wordmark.svg';
 import ReduxIcon from '@/icons/stack/redux.svg';
@@ -41,6 +42,10 @@ const stack = {
   socketio: {
     icon: <Socketio />,
     name: 'Socketio',
+  },
+  jest: {
+    icon: <Jest />,
+    name: 'Jest',
   },
 };
 
