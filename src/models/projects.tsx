@@ -14,6 +14,22 @@ interface ProjectInterface {
 
 const projects: ProjectInterface[] = [
   {
+    thumbnail: require('../../public/images/projects/slider-plugin/1.png'),
+    stackIcons: [stack.ts, stack.sass, stack.pug, stack.jest],
+    name: 'Slider plugin',
+    deploy: 'https://kd-slider-plugin.netlify.app/example',
+    git: 'https://github.com/KaguraDun/slider-plugin',
+    about: (
+      <>
+        <p>
+          Jquery slider plugin with handy API, MVP architecture, Observer
+          pattern and Typescript. Code covered by unit tests.
+        </p>
+        <p>App created as second task of Metalamp educational program.</p>
+      </>
+    ),
+  },
+  {
     thumbnail: require('../../public/images/projects/toxin-markup/1.png'),
     stackIcons: [stack.js, stack.sass, stack.pug],
     name: 'Toxin markup',
