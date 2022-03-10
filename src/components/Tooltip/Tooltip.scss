@@ -1,11 +1,17 @@
 .text {
   position: absolute;
-  bottom: 25px;
-  min-width: 50px;
+  bottom: 100%;
+  left: 50%;
+  z-index: $z-index-tooltip;
+  width: max-content;
   padding: 5px;
+  font-style: normal;
   background: $color-primary-light;
-  border-radius: 8px;
+  border-radius: 4px;
+  transform: translateX(-50%);
   visibility: hidden;
+
+  @include blurBackground;
 }
 
 .tooltip {
