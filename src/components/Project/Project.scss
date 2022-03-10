@@ -4,7 +4,6 @@
     'thumbnail info'
     'stack info'
     '. info';
-  grid-template-rows: 0.2fr 0.2fr fit-content;
   grid-template-columns: 0.5fr 1fr;
   gap: 5px 15px;
   justify-content: space-between;
@@ -12,25 +11,27 @@
 
 .thumbnail {
   grid-area: thumbnail;
+  max-width: 300px;
+}
+
+.thumbnailImg {
+  width: 100%;
+  height: auto;
 }
 
 .stackIcons {
   grid-area: stack;
 }
 
-.thumbnailImg {
-  width: 250px;
-  height: auto;
-}
-
 .name {
   margin: 0 0 10px;
-  font-size: 30px;
-  line-height: 1;
+
+  @include text-heading-h2;
 }
 
 .linksWrapper {
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
   align-items: center;
   justify-content: flex-start;
@@ -42,11 +43,16 @@
   gap: 10px;
   align-items: center;
   padding: 5px;
-  font-size: 20px;
-  background: $color-primary-medium;
-  border-radius: 8px;
+  border-radius: 4px;
+
+  @include text-external-link;
   @include clear-link-style;
   @include blurBackground;
+
+  &:hover {
+    background: $color-primary-medium;
+    transition: $transition-hover;
+  }
 }
 
 .info {
@@ -60,4 +66,17 @@
 .about {
   margin: 0;
   padding: 0 5px;
+}
+
+.about > p {
+  margin: 0 0 10px;
+
+  &:last-of-type {
+    margin: 0;
+  }
+}
+
+.about > ul {
+  padding: 0 0 0 30px;
+  list-style-type: disc;
 }

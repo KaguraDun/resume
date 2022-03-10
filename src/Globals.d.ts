@@ -24,3 +24,4 @@ declare module '*.styl' {
 }
 
 declare module '*.svg';
+declare module '*.jpg';

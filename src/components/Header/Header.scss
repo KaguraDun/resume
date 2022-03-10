@@ -1,60 +1,40 @@
-.header {
-  min-width: 25%;
-  padding: 10px;
-  border-radius: 8px;
-  @include blurBackground();
-}
-
-.photo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 10px;
-}
-
-.title,
-.subTitle,
-.location {
-  margin: 0 5px 0;
-}
-
-.title {
-  font-size: 25px;
-}
-
-.subTitle {
-  font-size: 20px;
-}
-
-.contacts {
+.navigation {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
-.iconsRow {
+.itemList {
   display: flex;
-  gap: 15px;
-  align-items: center;
-  justify-content: center;
+  gap: 10px;
+  align-items: flex-start;
+
+  @include clear-list-style;
 }
 
-.contact {
-  display: flex;
-  align-items: center;
-  height: 100%;
+.item {
+  width: 50%;
+}
 
-  &Link {
-    display: flex;
-    align-items: center;
-    margin: 0;
-  }
+.link {
+  display: block;
+  padding: 5px;
+  font-size: 24px;
+  text-align: center;
+  border-radius: 4px 4px 0 0;
 
-  &Field {
-    margin-right: 10px;
-    font-size: inherit;
-    font-style: inherit;
-    background-color: inherit;
-    border: 0;
-    cursor: pointer;
+  @include clear-link-style;
+  @include blurBackground($opacity: 0.5);
+
+  &:hover {
+    transition: $transition-hover;
+
+    @include blurBackground();
   }
+}
+
+.selected {
+  margin-bottom: 0;
+
+  @include blurBackground();
 }

@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  max-width: 1170px;
+  max-width: $size-desktop;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -17,9 +17,16 @@
   margin-bottom: 25px;
 }
 
+.headerContainer {
+  width: 100%;
+  min-width: 20%;
+  max-width: 25%;
+}
+
 .contentWrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 65%;
+  width: 100%;
+  max-width: 65%;
 }

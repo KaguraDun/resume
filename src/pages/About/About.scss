@@ -1,5 +1,21 @@
 .about {
   @include page;
+}
 
-  border-radius: 0 8px 8px 8px;
+.heading {
+  margin: 0 0 15px;
+
+  @include text-heading-h2;
+}
+
+.text {
+  margin: 0 0 10px;
+}
+
+.link {
+  @include clear-link-style;
+
+  &:hover {
+    border-bottom: 1px solid $color-primary-dark;
+  }
 }

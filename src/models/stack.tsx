@@ -1,12 +1,20 @@
 import React from 'react';
 
+import CssIcon from '@/icons/stack/css3.svg';
 import JSIcon from '@/icons/stack/javascript.svg';
+import Jest from '@/icons/stack/jest.svg';
+import PugIcon from '@/icons/stack/pug.svg';
 import ReactIcon from '@/icons/stack/react-wordmark.svg';
 import ReduxIcon from '@/icons/stack/redux.svg';
 import SassIcon from '@/icons/stack/sass.svg';
+import Socketio from '@/icons/stack/socketio.svg';
 import TSIcon from '@/icons/stack/typescript.svg';
 
 const stack = {
+  pug: {
+    icon: <PugIcon />,
+    name: 'Pug',
+  },
   js: {
     icon: <JSIcon />,
     name: 'JavaScript',
@@ -23,9 +31,21 @@ const stack = {
     icon: <ReduxIcon />,
     name: 'Redux',
   },
+  css: {
+    icon: <CssIcon />,
+    name: 'Css',
+  },
   sass: {
     icon: <SassIcon />,
     name: 'Sass',
+  },
+  socketio: {
+    icon: <Socketio />,
+    name: 'Socketio',
+  },
+  jest: {
+    icon: <Jest />,
+    name: 'Jest',
   },
 };
 

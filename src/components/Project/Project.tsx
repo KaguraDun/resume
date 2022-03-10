@@ -1,4 +1,3 @@
-/* eslint-disable react/no-danger */
 import React from 'react';
 
 import StackIcons from '@/components/StackIcons/StackIcons';
@@ -18,9 +17,13 @@ function Project({ item }: Props) {
       <div className={s.thumbnail}>
         <img alt={item.name} className={s.thumbnailImg} src={item.thumbnail} />
       </div>
-      <StackIcons className={s.stackIcons} iconsList={item.stackIcons} />
+
+      <div className={s.stackIcons}>
+        <StackIcons iconsList={item.stackIcons} />
+      </div>
+
       <div className={s.info}>
-        <h3 className={s.name}>{item.name}</h3>
+        <h2 className={s.name}>{item.name}</h2>
         <div className={s.linksWrapper}>
           <a
             className={s.link}
@@ -29,7 +32,7 @@ function Project({ item }: Props) {
             target="_blank"
           >
             Try online
-            <ExternalLinkIcon height="30px" width="30px" />
+            <ExternalLinkIcon height="15px" width="15px" />
           </a>
           <a
             className={s.link}
@@ -38,7 +41,7 @@ function Project({ item }: Props) {
             target="_blank"
           >
             Source code
-            <GithubLogo height="30px" width="30px" />
+            <GithubLogo height="20px" width="20px" />
           </a>
         </div>
 

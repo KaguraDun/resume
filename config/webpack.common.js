@@ -50,8 +50,8 @@ module.exports = {
     // Generates an HTML file from a template
     // Generates deprecation warning: https://github.com/jantimon/html-webpack-plugin/issues/1501
     new HtmlWebpackPlugin({
-      title: 'Vasily Kovnev resume',
-      favicon: `${paths.src}/images/favicon.png`,
+      title: 'Vasily Kovnev\'s resume',
+      favicon: `${paths.public}/images/favicon.png`,
       template: `${paths.src}/template.html`, // template file
       filename: 'index.html', // output file
     }),
@@ -100,15 +100,15 @@ module.exports = {
     modules: [paths.src, 'node_modules'],
     extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
     alias: {
-      '@': paths.src,
-      '@components': `${paths.src}/components`,
-      '@features': `${paths.src}/features`,
-      '@icons': `${paths.src}/icons`,
-      '@images': `${paths.src}/images`,
-      '@models': `${paths.src}/models`,
-      '@pages': `${paths.src}/pages`,
-      '@services': `${paths.src}/services`,
-      '@styles': `${paths.src}/styles`,
+      '@/components': `${paths.src}/components`,
+      '@/features': `${paths.src}/features`,
+      '@/fonts': `${paths.public}/fonts`,
+      '@/icons': `${paths.public}/icons`,
+      '@/images': `${paths.public}/images`,
+      '@/models': `${paths.src}/models`,
+      '@/pages': `${paths.src}/pages`,
+      '@/services': `${paths.src}/services`,
+      '@/styles': `${paths.src}/styles`,
     },
   },
 };

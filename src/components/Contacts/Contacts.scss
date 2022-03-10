@@ -1,0 +1,25 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 4px;
+
+  @include blurBackground();
+}
+
+.photo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.title {
+  margin: 0;
+
+  @include text-heading-h1;
+}
+
+.subTitle {
+  @include text-subheading;
+}
