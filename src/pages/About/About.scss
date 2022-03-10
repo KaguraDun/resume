@@ -11,3 +11,11 @@
 .text {
   margin: 0 0 10px;
 }
+
+.link {
+  @include clear-link-style;
+
+  &:hover {
+    border-bottom: 1px solid $color-primary-dark;
+  }
+}

@@ -6,10 +6,37 @@ function About() {
   return (
     <section className={s.about}>
       <p className={s.text}>
-        Hello my name is Vasily Kovnev. I am front-end developer. My stack:
-        HTML5, BEM, PUG, CSS3, SASS, JavaScript, React, Redux, TypeScript, Git,
-        and unit testing.
+        Hello my name is Vasily Kovnev. I am front-end developer. I love
+        front-end and constantly improve my skills.
+        <br />
+        My stack: Webpack, HTML5, BEM, PUG, CSS3, SASS, JavaScript, React,
+        Redux, TypeScript. Adaptive, responsive, semantic, pixel perfect markup,
+        unit testing with jest.
       </p>
+      <h2 className={s.heading}>Completed courses</h2>
+      <ul>
+        <li>
+          <a
+            className={s.link}
+            href="https://app.rs.school/certificate/ymyn3b81"
+            rel="noreferrer"
+            target="_blank"
+          >
+            RSSchool JS/Front-end
+          </a>
+        </li>
+
+        <li>
+          <a
+            className={s.link}
+            href="https://app.rs.school/certificate/p45583dx"
+            rel="noreferrer"
+            target="_blank"
+          >
+            RSSchool JS/React
+          </a>
+        </li>
+      </ul>
       <h2 className={s.heading}>Languages</h2>
       <p className={s.text}>English - B1, Russian - Native.</p>
       <h2 className={s.heading}>Education</h2>
