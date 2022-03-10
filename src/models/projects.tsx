@@ -14,6 +14,22 @@ interface ProjectInterface {
 
 const projects: ProjectInterface[] = [
   {
+    thumbnail: require('../../public/images/projects/toxin-markup/1.png'),
+    stackIcons: [stack.js, stack.sass, stack.pug],
+    name: 'Toxin markup',
+    deploy: 'https://kd-toxin-markup.netlify.app/',
+    git: 'https://github.com/KaguraDun/toxin-markup',
+    about: (
+      <>
+        <p>
+          Hotel website layout, 6 pages in total plus 3 UIkit pages. Pixel
+          perfect, BEM, component approach, responsive layout.
+        </p>
+        <p>App created as first task of Metalamp educational program.</p>
+      </>
+    ),
+  },
+  {
     thumbnail: require('../../public/images/projects/pointing-poker/1.png'),
     stackIcons: [
       stack.ts,
