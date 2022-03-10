@@ -60,24 +60,29 @@ function Socials() {
         </Tooltip>
       </div>
 
-      <div className={s.iconsRow}>
-        <a
-          className={s.contactLink}
-          href="https://github.com/KaguraDun"
-          rel="noreferrer"
-          target="_blank"
-        >
-          <GithubLogo height="40px" width="40px" />
-        </a>
-        <a
-          className={s.contactLink}
-          href="https://t.me/KaguraDun"
-          rel="noreferrer"
-          target="_blank"
-        >
-          <TelegramLogo height="35px" width="35px" />
-        </a>
-      </div>
+      <ul className={s.socials}>
+        <li>
+          <a
+            className={s.contactLink}
+            href="https://github.com/KaguraDun"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <GithubLogo height="40px" width="40px" />
+          </a>
+        </li>
+
+        <li>
+          <a
+            className={s.contactLink}
+            href="https://t.me/KaguraDun"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <TelegramLogo height="35px" width="35px" />
+          </a>
+        </li>
+      </ul>
     </address>
   );
 }
