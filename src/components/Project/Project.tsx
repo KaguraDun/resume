@@ -23,7 +23,7 @@ function Project({ item }: Props) {
       </div>
 
       <div className={s.info}>
-        <h3 className={s.name}>{item.name}</h3>
+        <h2 className={s.name}>{item.name}</h2>
         <div className={s.linksWrapper}>
           <a
             className={s.link}
