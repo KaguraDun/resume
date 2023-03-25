@@ -16,10 +16,4 @@
 
 .title {
   margin: 0;
-
-  @include text-heading-h1;
-}
-
-.subTitle {
-  @include text-subheading;
 }

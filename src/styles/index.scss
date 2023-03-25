@@ -1,4 +1,5 @@
 @import './fonts';
+@import './global/typography';
 
 * {
   box-sizing: border-box;
@@ -8,11 +9,9 @@ body {
   margin: 0;
   padding: 0;
   background: $bg-main;
-
-  @include text-body;
 }
 
-:global(#root) {
+#root {
   display: flex;
   flex-direction: column;
   height: 100vh;

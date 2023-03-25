@@ -10,6 +10,11 @@ import SassIcon from '@/icons/stack/sass.svg';
 import Socketio from '@/icons/stack/socketio.svg';
 import TSIcon from '@/icons/stack/typescript.svg';
 
+interface StackIcon {
+  icon: JSX.Element;
+  name: string;
+}
+
 const stack = {
   pug: {
     icon: <PugIcon />,
@@ -48,11 +53,6 @@ const stack = {
     name: 'Jest',
   },
 };
-
-interface StackIcon {
-  icon: JSX.Element;
-  name: string;
-}
 
 export { stack };
 export type { StackIcon };

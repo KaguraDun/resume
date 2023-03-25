@@ -1,3 +1,4 @@
+import cn from 'classnames';
 import React from 'react';
 
 import avatar from '@/images/avatar.jpg';
@@ -10,10 +11,12 @@ function Contacts() {
     <article className={s.contacts}>
       <img alt="avatar" className={s.photo} src={avatar} />
 
-      <h1 className={s.title}>
+      <h1 className={cn(s.title, 'text-heading-h1')}>
         Vasily Kovnev
         <br />
-        <span className={s.subTitle}>Front-end developer</span>
+        <span className={cn(s.title, 'text-subheading')}>
+          Front-end developer
+        </span>
       </h1>
 
       <Socials />

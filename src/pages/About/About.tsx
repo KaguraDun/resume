@@ -1,10 +1,11 @@
+import cn from 'classnames';
 import React from 'react';
 
 import s from './About.scss';
 
 function About() {
   return (
-    <section className={s.about}>
+    <section>
       <p className={s.text}>
         Hello my name is Vasily Kovnev. I am front-end developer. I love
         front-end and constantly improve my skills.
@@ -13,11 +14,11 @@ function About() {
         Redux, TypeScript. Adaptive, responsive, semantic, pixel perfect markup,
         unit testing with jest.
       </p>
-      <h2 className={s.heading}>Completed courses</h2>
+      <h2 className={cn(s.heading, 'text-heading-h2')}>Completed courses</h2>
       <ul>
         <li>
           <a
-            className={s.link}
+            className="text-link"
             href="https://app.rs.school/certificate/ymyn3b81"
             rel="noreferrer"
             target="_blank"
@@ -28,7 +29,7 @@ function About() {
 
         <li>
           <a
-            className={s.link}
+            className="text-link"
             href="https://app.rs.school/certificate/p45583dx"
             rel="noreferrer"
             target="_blank"
@@ -37,9 +38,9 @@ function About() {
           </a>
         </li>
       </ul>
-      <h2 className={s.heading}>Languages</h2>
+      <h2 className={cn(s.heading, 'text-heading-h2')}>Languages</h2>
       <p className={s.text}>English - B1, Russian - Native.</p>
-      <h2 className={s.heading}>Education</h2>
+      <h2 className={cn(s.heading, 'text-heading-h2')}>Education</h2>
       <p className={s.text}>
         2013 - 2017 - Bachelor&apos;s Degree Voronezh State Pedagogical
         University

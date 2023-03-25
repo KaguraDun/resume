@@ -1,28 +1,38 @@
-@mixin text-body {
+@import './mixins';
+
+.text-body {
   font-size: 18px;
   font-family: Montserrat, Arial, Helvetica, sans-serif;
   line-height: 1.5;
 }
 
-@mixin text-external-link {
+.text-external-link {
   font-weight: bold;
   font-size: 14px;
   text-transform: uppercase;
 }
 
-@mixin text-heading-h1 {
+.text-heading-h1 {
   font-weight: normal;
   font-size: 40px;
   line-height: 1;
 }
 
-@mixin text-heading-h2 {
+.text-heading-h2 {
   font-weight: normal;
   font-size: 36px;
   line-height: 1;
 }
 
-@mixin text-subheading {
+.text-subheading {
   font-size: 20px;
   line-height: 1;
+}
+
+.text-link {
+  @include clear-link-style;
+
+  &:hover {
+    border-bottom: 1px solid $color-primary-dark;
+  }
 }

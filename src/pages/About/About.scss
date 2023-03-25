@@ -1,21 +1,7 @@
-.about {
-  @include page;
-}
-
 .heading {
   margin: 0 0 15px;
-
-  @include text-heading-h2;
 }
 
 .text {
   margin: 0 0 10px;
-}
-
-.link {
-  @include clear-link-style;
-
-  &:hover {
-    border-bottom: 1px solid $color-primary-dark;
-  }
 }

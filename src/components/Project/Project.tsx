@@ -1,3 +1,4 @@
+import cn from 'classnames';
 import React from 'react';
 
 import StackIcons from '@/components/StackIcons/StackIcons';
@@ -23,10 +24,10 @@ function Project({ item }: Props) {
       </div>
 
       <div className={s.info}>
-        <h2 className={s.name}>{item.name}</h2>
+        <h2 className={cn(s.name, 'text-heading-h2')}>{item.name}</h2>
         <div className={s.linksWrapper}>
           <a
-            className={s.link}
+            className={cn(s.link, 'text-external-link')}
             href={item.deploy}
             rel="noreferrer"
             target="_blank"
@@ -35,7 +36,7 @@ function Project({ item }: Props) {
             <ExternalLinkIcon height="15px" width="15px" />
           </a>
           <a
-            className={s.link}
+            className={cn(s.link, 'text-external-link')}
             href={item.git}
             rel="noreferrer"
             target="_blank"
