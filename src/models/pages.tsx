@@ -1,3 +1,5 @@
+import React from 'react';
+
 import About from '@/pages/About/About';
 import Projects from '@/pages/Projects/Projects';
 import WorkExperience from '@/pages/WorkExperience/WorkExperience';
