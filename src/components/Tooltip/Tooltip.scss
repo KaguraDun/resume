@@ -1,14 +1,14 @@
 .text {
   position: absolute;
-  bottom: 100%;
-  left: 50%;
+  top: 50%;
+  right: -25%;
   z-index: $z-index-tooltip;
   width: max-content;
   padding: 5px;
   font-style: normal;
   background: $color-primary-light;
   border-radius: 4px;
-  transform: translateX(-50%);
+  transform: translateY(-50%);
   visibility: hidden;
 
   @include blurBackground;
