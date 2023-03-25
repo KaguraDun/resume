@@ -24,7 +24,10 @@ function Project({ item }: Props) {
       </div>
 
       <div className={s.info}>
-        <h2 className={cn(s.name, 'text-heading-h2')}>{item.name}</h2>
+        <div className={s.header}>
+          <h2 className={cn(s.name, 'text-heading-h2')}>{item.name}</h2>
+          <span>{item.lastUpdate}</span>
+        </div>
         <div className={s.linksWrapper}>
           <a
             className={cn(s.link, 'text-external-link')}

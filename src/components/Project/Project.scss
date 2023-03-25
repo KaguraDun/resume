@@ -60,6 +60,12 @@
   margin-bottom: 20px;
 }
 
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .about {
   margin: 0;
   padding: 0 5px;
