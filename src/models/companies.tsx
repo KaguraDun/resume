@@ -31,7 +31,7 @@ const companies = [
       <>
         <ol className="list">
           <li>
-            Adaptive cross-browser Pixel Perfect makeup, creating components
+            Adaptive cross-browser Pixel Perfect markup, creating components
             based on Figma layouts. (React, Reactstrap, CSS Modules, Formik);
           </li>
           <li>
