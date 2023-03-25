@@ -1,18 +1,20 @@
 @import './fonts';
 @import './global/typography';
 
-* {
-  box-sizing: border-box;
-}
+:global {
+  * {
+    box-sizing: border-box;
+  }
 
-body {
-  margin: 0;
-  padding: 0;
-  background: $bg-main;
-}
+  body {
+    margin: 0;
+    padding: 0;
+    background: $bg-main;
+  }
 
-#root {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
+  #root {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
 }

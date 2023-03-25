@@ -1,5 +1,3 @@
-import '@/styles/index.scss';
-
 import React from 'react';
 
 import Contacts from '@/components/Contacts/Contacts';
