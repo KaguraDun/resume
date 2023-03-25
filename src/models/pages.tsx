@@ -18,7 +18,7 @@ const pages = [
   },
   {
     linkTo: '/work',
-    navText: 'Work experience',
+    navText: 'Work Experience',
     componentToRender: <WorkExperience />,
   },
   {
