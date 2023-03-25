@@ -30,6 +30,14 @@
     line-height: 1;
   }
 
+  .font-style-italic {
+    font-style: italic;
+  }
+
+  .list {
+    margin-left: 20px;
+  }
+
   .text-link {
     @include clear-link-style;
 
