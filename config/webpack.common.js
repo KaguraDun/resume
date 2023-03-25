@@ -109,6 +109,7 @@ module.exports = {
       '@/pages': `${paths.src}/pages`,
       '@/services': `${paths.src}/services`,
       '@/styles': `${paths.src}/styles`,
+      '@/helpers': `${paths.src}/helpers`,
     },
   },
 };
