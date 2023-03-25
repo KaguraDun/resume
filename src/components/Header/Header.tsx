@@ -3,31 +3,30 @@ import { NavLink } from 'react-router-dom';
 
 import s from './Header.scss';
 
-function Header() {
+interface IHeader {
+  places: {
+    linkTo: string;
+    navText: string;
+  }[];
+}
+
+function Header({ places }: IHeader) {
   return (
     <header>
       <nav className={s.navigation}>
         <ul className={s.itemList}>
-          <li className={s.item}>
-            <NavLink
-              activeClassName={s.selected}
-              className={s.link}
-              exact
-              to="/"
-            >
-              About
-            </NavLink>
-          </li>
-          <li className={s.item}>
-            <NavLink
-              activeClassName={s.selected}
-              className={s.link}
-              exact
-              to="/projects"
-            >
-              Projects
-            </NavLink>
-          </li>
+          {places.map((item) => (
+            <li key={item.linkTo} className={s.item}>
+              <NavLink
+                activeClassName={s.selected}
+                className={s.link}
+                exact
+                to={item.linkTo}
+              >
+                {item.navText}
+              </NavLink>
+            </li>
+          ))}
         </ul>
       </nav>
     </header>
