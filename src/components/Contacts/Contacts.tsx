@@ -1,7 +1,7 @@
 import cn from 'classnames';
 import React from 'react';
 
-import avatar from '@/images/avatar.jpg';
+import avatar from '@/images/avatar.png';
 
 import Socials from '../Socials/Socials';
 import s from './Contacts.scss';
