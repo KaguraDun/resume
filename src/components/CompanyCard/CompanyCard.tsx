@@ -22,7 +22,7 @@ const CompanyCard = ({ company }: ICompanyCardProps) => (
       </div>
     </div>
     <div className={s.about}>{company.about}</div>
-    <div >{company.experience}</div>
+    <div>{company.experience}</div>
   </div>
 );
 

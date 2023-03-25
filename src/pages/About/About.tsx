@@ -44,20 +44,19 @@ function About() {
       <p className={s.text}>English - B1, Russian - Native.</p>
       <h2 className={cn(s.heading, 'text-heading-h2')}>Education</h2>
       <p className={s.text}>
-        <p className={s.text}>
-          <b>2019</b> - <b>2022</b> - PhD Voronezh Institute of High
-          Technologies
-          <br />
-          Informatics and computer engineering - Management in social and
-          economic systems (not completed)
-        </p>
-        <p className={s.text}>
-          <b>2017</b> - <b>2019</b> - Master&apos;s Degree Voronezh State
-          University
-          <br />
-          Faculty of Applied Mathematics and Mechanics - Mathematical
-          foundations of computer graphics
-        </p>
+        <b>2019</b> - <b>2022</b> - PhD Voronezh Institute of High Technologies
+        <br />
+        Informatics and computer engineering - Management in social and economic
+        systems (not completed)
+      </p>
+      <p className={s.text}>
+        <b>2017</b> - <b>2019</b> - Master&apos;s Degree Voronezh State
+        University
+        <br />
+        Faculty of Applied Mathematics and Mechanics - Mathematical foundations
+        of computer graphics
+      </p>
+      <p className={s.text}>
         <b>2013</b> - <b>2017</b> - Bachelor&apos;s Degree Voronezh State
         Pedagogical University
         <br />
