@@ -8,13 +8,8 @@ function Socials() {
   return (
     <ul className={s.socials}>
       {socials.map((social) => (
-        <li key={social.link}>
-          <a
-            className={s.contactLink}
-            href={social.link}
-            rel="noreferrer"
-            target="_blank"
-          >
+        <li className={s.link} key={social.link}>
+          <a href={social.link} rel="noreferrer" target="_blank">
             {social.logo}
           </a>
         </li>

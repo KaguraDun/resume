@@ -6,3 +6,9 @@
 
   @include clear-list-style;
 }
+
+.link {
+  &:hover {
+    transform: scale(1.1);
+  }
+}
