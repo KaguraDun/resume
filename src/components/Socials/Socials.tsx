@@ -8,7 +8,7 @@ function Socials() {
   return (
     <ul className={s.socials}>
       {socials.map((social) => (
-        <li className={s.link} key={social.link}>
+        <li key={social.link} className={s.link}>
           <a href={social.link} rel="noreferrer" target="_blank">
             {social.logo}
           </a>
