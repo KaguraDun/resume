@@ -7,6 +7,16 @@
   grid-template-columns: 0.5fr 1fr;
   gap: 5px 15px;
   justify-content: space-between;
+
+  @media (max-width: $size-laptop) {
+    grid-template:
+      'info'
+      'info'
+      'info'
+      'thumbnail'
+      'stack';
+    grid-template-columns: 1fr;
+  }
 }
 
 .thumbnail {
@@ -58,6 +68,17 @@
   grid-area: info;
   width: 100%;
   margin-bottom: 20px;
+}
+
+.leftRow {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  @media (max-width: $size-laptop) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .header {

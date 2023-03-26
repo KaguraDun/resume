@@ -1,18 +1,56 @@
 .contactsWrapper {
   display: flex;
   flex-direction: column;
+  max-width: 350px;
   padding: 10px;
   border-radius: 4px;
 
   @include blurBackground();
+
+  @media (max-width: $size-laptop-l) {
+    flex-direction: row;
+    gap: 10px;
+    max-width: 100%;
+  }
+
+  @media (max-width: $size-mobile) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.contactsInner {
+  @media (max-width: $size-laptop-l) {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  @media (max-width: $size-tablet) {
+    flex-direction: column;
+  }
+}
+
+.mainInformation {
+  @media (max-width: $size-laptop-l) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .photo {
   display: flex;
   align-items: center;
   justify-content: center;
+  max-width: 330px;
   margin-bottom: 15px;
   border-radius: 4px;
+
+  @media (max-width: $size-laptop-l) {
+    max-width: 200px;
+    margin-bottom: 0;
+    object-fit: contain;
+  }
 }
 
 .title {
@@ -25,12 +63,18 @@
 
 .contacts {
   margin-bottom: 10px;
+
+  @media (max-width: $size-laptop-l) {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+  }
 }
 
 .contact {
   display: flex;
   align-items: center;
-  height: 100%;
+  max-height: 50px;
 
   &Link {
     display: flex;

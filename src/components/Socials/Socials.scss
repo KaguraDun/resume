@@ -5,6 +5,14 @@
   justify-content: flex-start;
 
   @include clear-list-style;
+
+  @media (max-width: $size-laptop-l) {
+    flex-direction: column;
+  }
+
+  @media (max-width: $size-tablet) {
+    flex-direction: row;
+  }
 }
 
 .link {

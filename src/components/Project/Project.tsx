@@ -15,12 +15,18 @@ interface Props {
 function Project({ item }: Props) {
   return (
     <article className={s.project}>
-      <div className={s.thumbnail}>
-        <img alt={item.name} className={s.thumbnailImg} src={item.thumbnail} />
-      </div>
+      <div className={s.leftRow}>
+        <div className={s.thumbnail}>
+          <img
+            alt={item.name}
+            className={s.thumbnailImg}
+            src={item.thumbnail}
+          />
+        </div>
 
-      <div className={s.stackIcons}>
-        <StackIcons iconsList={item.stackIcons} />
+        <div className={s.stackIcons}>
+          <StackIcons iconsList={item.stackIcons} />
+        </div>
       </div>
 
       <div className={s.info}>

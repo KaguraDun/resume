@@ -10,13 +10,15 @@ import s from './App.scss';
 const App = () => (
   <>
     <div className={s.container}>
-      <div className={s.row}>
-        <div className={s.headerContainer}>
-          <Contacts />
-        </div>
+      <div className={s.inner}>
+        <div className={s.row}>
+          <div className={s.headerContainer}>
+            <Contacts />
+          </div>
 
-        <div className={s.contentWrapper}>
-          <PageGenerator pages={pages} />
+          <div className={s.contentWrapper}>
+            <PageGenerator pages={pages} />
+          </div>
         </div>
       </div>
     </div>
