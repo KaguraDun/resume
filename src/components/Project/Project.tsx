@@ -4,6 +4,7 @@ import React from 'react';
 import StackIcons from '@/components/StackIcons/StackIcons';
 import ExternalLinkIcon from '@/icons/external-link.svg';
 import GithubLogo from '@/icons/socials/github.svg';
+import YoutubeLogo from '@/icons/socials/youtube.svg';
 import { ProjectInterface } from '@/models/projects';
 
 import s from './Project.scss';
@@ -53,6 +54,18 @@ function Project({ item }: Props) {
             Source code
             <GithubLogo height="20px" width="20px" />
           </a>
+
+          {item.video && (
+            <a
+              className={cn(s.link, 'text-external-link')}
+              href={item.video}
+              rel="noreferrer"
+              target="_blank"
+            >
+              watch video
+              <YoutubeLogo height="20px" width="20px" viewBox="0 0 159 110" />
+            </a>
+          )}
         </div>
 
         <div className={s.about}>{item.about}</div>
