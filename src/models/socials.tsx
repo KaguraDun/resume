@@ -1,7 +1,7 @@
 import React from 'react';
 
 import GithubLogo from '@/icons/socials/github.svg';
-import LinkedInLogo from '@/icons/socials/linkedin.svg';
+import LinkedInLogo from '@/icons/socials/linkedIn.svg';
 import TelegramLogo from '@/icons/socials/telegram.svg';
 
 interface ISocials {

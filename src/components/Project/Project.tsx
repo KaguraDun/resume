@@ -63,7 +63,7 @@ function Project({ item }: Props) {
               target="_blank"
             >
               watch video
-              <YoutubeLogo height="20px" width="20px" viewBox="0 0 159 110" />
+              <YoutubeLogo height="20px" viewBox="0 0 159 110" width="20px" />
             </a>
           )}
         </div>
