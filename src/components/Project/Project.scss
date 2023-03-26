@@ -7,6 +7,16 @@
   grid-template-columns: 0.5fr 1fr;
   gap: 5px 15px;
   justify-content: space-between;
+
+  @media (max-width: $size-laptop) {
+    grid-template:
+      'info'
+      'info'
+      'info'
+      'thumbnail'
+      'stack';
+    grid-template-columns: 1fr;
+  }
 }
 
 .thumbnail {
@@ -25,8 +35,6 @@
 
 .name {
   margin: 0 0 10px;
-
-  @include text-heading-h2;
 }
 
 .linksWrapper {
@@ -45,7 +53,6 @@
   padding: 5px;
   border-radius: 4px;
 
-  @include text-external-link;
   @include clear-link-style;
   @include blurBackground;
 
@@ -61,6 +68,23 @@
   grid-area: info;
   width: 100%;
   margin-bottom: 20px;
+}
+
+.leftRow {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  @media (max-width: $size-laptop) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .about {

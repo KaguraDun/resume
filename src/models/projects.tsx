@@ -1,4 +1,3 @@
-/* eslint-disable global-require */
 import React from 'react';
 
 import { stack, StackIcon } from '@/models/stack';
@@ -9,6 +8,7 @@ interface ProjectInterface {
   name: string;
   deploy: string;
   git: string;
+  lastUpdate: string;
   about: JSX.Element;
 }
 
@@ -19,6 +19,7 @@ const projects: ProjectInterface[] = [
     name: 'Slider plugin',
     deploy: 'https://kd-slider-plugin.netlify.app/example',
     git: 'https://github.com/KaguraDun/slider-plugin',
+    lastUpdate: 'Feb 2022',
     about: (
       <>
         <p>
@@ -35,6 +36,7 @@ const projects: ProjectInterface[] = [
     name: 'Toxin markup',
     deploy: 'https://kd-toxin-markup.netlify.app/',
     git: 'https://github.com/KaguraDun/toxin-markup',
+    lastUpdate: 'Mar 2022',
     about: (
       <>
         <p>
@@ -57,6 +59,7 @@ const projects: ProjectInterface[] = [
     name: 'Pointing poker',
     deploy: 'https://scrum-planning-poker.netlify.app/',
     git: 'https://github.com/KaguraDun/pointing-poker/tree/develop',
+    lastUpdate: 'Oct 2021',
     about: (
       <>
         <p>
@@ -86,6 +89,7 @@ const projects: ProjectInterface[] = [
     name: 'Songster clone',
     deploy: 'https://kaguradun.github.io/songster-clone/',
     git: 'https://github.com/KaguraDun/songster-clone',
+    lastUpdate: 'Feb 2021',
     about: (
       <>
         <p>
@@ -111,6 +115,7 @@ const projects: ProjectInterface[] = [
     deploy:
       'https://rolling-scopes-school.github.io/zavrazhneva-JS2020Q3/covid-19/',
     git: 'https://github.com/Zavrazhneva/covid-19',
+    lastUpdate: 'Dec 2020',
     about: (
       <>
         <p>
@@ -134,6 +139,7 @@ const projects: ProjectInterface[] = [
     deploy:
       'https://rolling-scopes-school.github.io/kaguradun-JS2020Q3/rs-css/',
     git: 'https://github.com/KaguraDun/rolling-scopes-school/tree/rs-css/rs-css/webpack-boilerplate-master',
+    lastUpdate: 'Dec 2020',
     about: (
       <>
         <p>
@@ -154,6 +160,7 @@ const projects: ProjectInterface[] = [
     deploy:
       'https://rolling-scopes-school.github.io/kaguradun-JS2020Q3/gem-puzzle/',
     git: 'https://github.com/KaguraDun/rolling-scopes-school/tree/gem-puzzle/gem-puzzle/webpack-boilerplate-master',
+    lastUpdate: 'Nov 2020',
     about: (
       <>
         <p>Gem puzzle with different field sizes and best results table.</p>
@@ -168,6 +175,7 @@ const projects: ProjectInterface[] = [
     deploy:
       'https://rolling-scopes-school.github.io/kaguradun-JS2020Q3/virtual-keyboard/',
     git: 'https://github.com/KaguraDun/rolling-scopes-school/tree/virtual-keyboard/virtual-keyboard',
+    lastUpdate: 'Nov 2020',
     about: (
       <>
         <p>
@@ -184,6 +192,7 @@ const projects: ProjectInterface[] = [
     deploy:
       'https://rolling-scopes-school.github.io/kaguradun-JS2020Q3/shelter/pages/main/main.html',
     git: 'https://github.com/KaguraDun/rolling-scopes-school/tree/shelter',
+    lastUpdate: 'Oct 2020',
     about: (
       <>
         <p>Simple two page website.</p>
@@ -198,6 +207,7 @@ const projects: ProjectInterface[] = [
     deploy:
       'https://rolling-scopes-school.github.io/kaguradun-JS2020Q3/momentum/',
     git: 'https://github.com/KaguraDun/rolling-scopes-school/tree/momentum',
+    lastUpdate: 'Oct 2020',
     about: (
       <>
         <p>
@@ -218,6 +228,7 @@ const projects: ProjectInterface[] = [
     deploy:
       'https://rolling-scopes-school.github.io/kaguradun-JS2020Q3/calculator/',
     git: 'https://github.com/KaguraDun/rolling-scopes-school/tree/calculator',
+    lastUpdate: 'Oct 2020',
     about: (
       <p>
         Calculator with basic functions. App created during RSSchool

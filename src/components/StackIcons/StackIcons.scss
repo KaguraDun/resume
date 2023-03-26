@@ -3,6 +3,10 @@
   gap: 10px;
 
   @include clear-list-style;
+
+  @media (max-width: $size-laptop) {
+    flex-direction: column;
+  }
 }
 
 .icon {
