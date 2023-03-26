@@ -22,6 +22,7 @@ const CompanyCard = ({ company }: ICompanyCardProps) => (
       </div>
     </div>
     <div className={s.about}>{company.about}</div>
+    <h3 className="text-heading-h3">What i do:</h3>
     <div>{company.experience}</div>
   </div>
 );
