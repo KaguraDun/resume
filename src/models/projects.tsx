@@ -1,3 +1,4 @@
+/* eslint-disable global-require */
 import React from 'react';
 
 import { stack, StackIcon } from '@/models/stack';
@@ -61,7 +62,7 @@ const projects: ProjectInterface[] = [
     deploy: 'https://scrum-planning-poker.netlify.app/',
     git: 'https://github.com/KaguraDun/pointing-poker/tree/develop',
     lastUpdate: 'Oct 2021',
-    video: "https://www.youtube.com/watch?v=tXLbud8cQZ8",
+    video: 'https://www.youtube.com/watch?v=tXLbud8cQZ8',
     about: (
       <>
         <p>
@@ -92,7 +93,7 @@ const projects: ProjectInterface[] = [
     deploy: 'https://kaguradun.github.io/songster-clone/',
     git: 'https://github.com/KaguraDun/songster-clone',
     lastUpdate: 'Feb 2021',
-    video: "https://www.youtube.com/watch?v=EYY83mSPAmM",
+    video: 'https://www.youtube.com/watch?v=EYY83mSPAmM',
     about: (
       <>
         <p>

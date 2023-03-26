@@ -23,7 +23,7 @@ const companies = [
         <p className="font-style-italic">
           Information technologies, system integration, Internet Software
           Development System integration, Automation of technological and
-          business processes, IT consulting,
+          business processes, IT consulting.
         </p>
       </>
     ),

@@ -11,12 +11,12 @@ function About() {
         teamwork. Actively working on soft and hard skills. Enthusiastic about
         learning new technologies.
       </p>
-      <h2 className={cn(s.heading, 'text-heading-h2')}>Stack</h2>
+      <h3 className={cn(s.heading, 'text-heading-h3')}>Stack</h3>
       <p className={s.text}>
         React, Redux, Redux Toolkit, TypeScript, JavaScript, HTML5, BEM, PUG,
         CSS3, SASS, Git, Jest, React testing library, webpack.
       </p>
-      <h2 className={cn(s.heading, 'text-heading-h2')}>Completed courses</h2>
+      <h3 className={cn(s.heading, 'text-heading-h3')}>Completed courses</h3>
       <ul className="list">
         <li>
           <a
@@ -40,9 +40,9 @@ function About() {
           </a>
         </li>
       </ul>
-      <h2 className={cn(s.heading, 'text-heading-h2')}>Languages</h2>
+      <h3 className={cn(s.heading, 'text-heading-h3')}>Languages</h3>
       <p className={s.text}>English - B1, Russian - Native.</p>
-      <h2 className={cn(s.heading, 'text-heading-h2')}>Education</h2>
+      <h3 className={cn(s.heading, 'text-heading-h3')}>Education</h3>
       <p className={s.text}>
         <b>2019</b> - <b>2022</b> - PhD Voronezh Institute of High Technologies
         <br />
